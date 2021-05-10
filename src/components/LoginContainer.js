@@ -69,7 +69,7 @@ Sign-In
 
 const mapStatetoProps=(state)=>{
 
-  localStorage.setItem("name",state.user.username);
+  
   return{
       username:state.user.username,
       password:state.user.password,

@@ -74,7 +74,7 @@ export const loginUser=(username,password)=>{
         console.log(res)
         var result=res.data.message;
 
-        if(result === "User founde"){
+        if(result === "user registered successfully"){
 
 
             dispatch(currentuser(username));

@@ -94,7 +94,7 @@ export const updatePassCat =(id,categories,password)=>{
 
   var OPTIONS= {
     method: 'PATCH',
-    url: 'http://localhost:5000/api/updatecategory',
+    url: 'https://aspmsserver.herokuapp.com/api/updatecategory',
     data:{id:id,category:categories,password:password},
     headers: {
       Authorization: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZhcnVuIHNoYXJtIGEiLCJpYXQiOjE2MTc5NzI2NDgsImV4cCI6MTYxNzk3NjI0OH0.iZbwDYeGggwn9GzbbEBQffmU9-S2bezd7L0PUTywHCM',
@@ -118,7 +118,7 @@ export const deletePassCat=(id)=>{
 
   var OPTIONS= {
     method: 'DELETE',
-    url: 'http://localhost:5000/api/deletecategory',
+    url: 'https://aspmsserver.herokuapp.com/api/deletecategory',
     data:{id:id},
     headers: {
       Authorization: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZhcnVuIHNoYXJtIGEiLCJpYXQiOjE2MTc5NzI2NDgsImV4cCI6MTYxNzk3NjI0OH0.iZbwDYeGggwn9GzbbEBQffmU9-S2bezd7L0PUTywHCM',
