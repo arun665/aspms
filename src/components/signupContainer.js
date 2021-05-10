@@ -21,10 +21,10 @@ import './sass/signin.scss';
 import { Container,Row,Col , Form ,Button,Alert} from 'react-bootstrap';
 
 function signupContainer(props) {
-  const [username,setUsername]=useState('');
-  const [password,setPassword]=useState('');
-  const [email,setEmail]=useState('');
-  const [confirmpassword,setConfirmPassword]=useState('');
+  const [Username,setUsername]=useState('');
+  const [Password,setPassword]=useState('');
+  const [Email,setEmail]=useState('');
+  const [Confirmpassword,setConfirmPassword]=useState('');
   
   if(props.signupmsg!=''){
               var msg=<Alert variant='danger'> <h3>{props.signupmsg}</h3> </Alert>
@@ -66,7 +66,7 @@ function signupContainer(props) {
   </Form.Group>
 
 <p> Already having account? <Link to="/signin">Signin</Link></p>
-  <Button variant="primary"  onClick={()=>props.signupUser(username,email,password,confirmpassword)}>
+  <Button variant="primary"  onClick={()=>props.signupUser(Username,Email,Password,Confirmpassword)}>
     SignUp
   </Button>
 </Form>
