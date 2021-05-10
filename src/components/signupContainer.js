@@ -43,7 +43,7 @@ function signupContainer(props) {
     <Form style={{'width':'80%','marginLeft':'auto','marginRight':'auto'}}>
     {msg}
   <Form.Group controlId="formBasicEmail">
-    <Form.Label>Username {username} </Form.Label>
+    <Form.Label>Username {Username} </Form.Label>
     <Form.Control type="text" defaultValue={props.username}  onChange={e=>setUsername(e.target.value)}/>
     
 
