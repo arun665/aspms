@@ -1,0 +1,58 @@
+#home{
+    font-family: 'Roboto Condensed', sans-serif;
+    #container{
+           
+        margin-top:10%;
+        h1{
+            font-size:4em;
+         
+
+        }
+        h2{
+            font-size: 3.5em;
+
+            color:grey
+        }
+        #typed{
+            font-size:3em;
+            margin-top:5%;
+            color:rgb(0, 119, 255);
+        }
+    }
+
+    @media screen and (max-width:576px) {
+        
+        #container{
+           
+            margin-top:10%;
+            h1{
+                font-size:2em;
+             
+    
+            }
+            h2{
+                font-size: 2em;
+    
+                color:grey
+            }
+            #typed{
+                font-size:2em;
+                margin-top:5%;
+                color:rgb(0, 119, 255);
+            }
+        }
+    
+    }
+
+    animation-name: entry;
+    animation-duration: 3s;
+    }
+    @keyframes entry {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity:1;
+        }
+        
+    }

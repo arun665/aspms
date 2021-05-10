@@ -1,0 +1,67 @@
+#signin{
+    background-color: #cceeff;
+    padding-top:5%;
+    padding-bottom:10%;
+    font-family: 'Roboto Condensed', sans-serif;
+min-height:100vh;
+
+    h1{
+        font-size:4em;
+        color:blue;
+    }
+    form{
+        margin-top:5%;
+        border:2px solid white;
+        color:white;
+        border-radius: 25px;;
+        font-size: 1.5em;;
+        box-shadow: 10px 10px 10px grey;;
+        padding:5%;
+        background-color: #4eaad8;
+        input{
+            background:transparent;
+            border-bottom:2px solid white;
+            color:white;
+        }
+        button{
+            border:1px solid white;
+            background-color: violet;
+            color:white;
+        }
+
+        button:hover{
+            background-color:blue;
+            
+        }
+    }
+
+    @media screen and (max-width:576px) {
+
+        #container{
+            width:100%;
+        }
+        form{
+            width:100%;
+            font-size: 1em;;
+            padding:10%;
+    
+        }
+        h1{
+            font-size:2em;
+            color:blue;
+        }
+    }
+
+
+    animation-name: entry;
+    animation-duration: 3s;
+    }
+    @keyframes entry {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity:1;
+        }
+        
+    }

@@ -1,0 +1,43 @@
+#header{
+    #navbar{
+        color:white;
+    }
+
+    #brand{
+        color:white;
+    }
+    #brand2{
+        color:white;
+    }
+#brand:hover{
+    text-decoration: none;
+}
+    
+@media screen and (max-width:576px) {
+    #brand{
+        font-size:1em;
+    }
+}
+
+    #brandsub:hover{
+background-color:rgb(0, 110, 255);
+color:white;
+#link{
+    color:white;
+    background-color: blue;;
+    text-decoration: none;
+}
+    }
+
+    animation-name: entry;
+    animation-duration: 3s;
+    }
+    @keyframes entry {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity:1;
+        }
+        
+    }

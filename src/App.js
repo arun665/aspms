@@ -1,24 +1,36 @@
 import logo from './logo.svg';
 import './App.css';
+import BookContainer from './components/bookContainer.js';
+import GetPassCat from './components/getPassCat.js';
+import Header from './components/Header.js';
+
+import SignupContainer from './components/signupContainer.js';
+import MainContainer from './components/mainContainer.js';
+import {BrowserRouter} from 'react-router-dom';
+import {Provider} from "react-redux";
+import store from './redux/Store.js';
+import { Container,Row,Col } from 'react-bootstrap';
+
+
+/*    <Header/>
+    <Container>
+   <Row> <Col><BookContainer/></Col> 
+
+<Col>
+   <GetPassCat/> </Col> </Row>
+</Container>*/
+
 
 function App() {
   return (
+<BrowserRouter>
+    <Provider store={store}>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+<MainContainer/>
     </div>
+    </Provider>
+    </BrowserRouter>
   );
 }
 
