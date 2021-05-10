@@ -43,7 +43,7 @@ console.log(user_id);
     return function(Dispatch){
     var OPTIONS= {
         method: 'GET',
-        url: 'http://localhost:5000/api/getpasscat/'+ user_id,
+        url: 'https://aspmsserver.herokuapp.com/api/getpasscat/'+ user_id,
     
         headers: {
           Authorization: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZhcnVuIHNoYXJtIGEiLCJpYXQiOjE2MTc5NzI2NDgsImV4cCI6MTYxNzk3NjI0OH0.iZbwDYeGggwn9GzbbEBQffmU9-S2bezd7L0PUTywHCM',
