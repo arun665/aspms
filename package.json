@@ -32,7 +32,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy":"https://aspmsserver.herokuapp.com/",
   "eslintConfig": {
     "extends": [
       "react-app",
